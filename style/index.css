@@ -17,6 +17,7 @@ header {
 nav {
   display: flex;
 }
+
 nav a {
   color: white;
   text-decoration: none;
@@ -59,6 +60,7 @@ section div a {
 
 img {
   max-height: 300px;
+  max-width: 300px;
   padding: 3px;
   /* padding: 1vh; */
   /* border-color: #caf0f8; */
@@ -95,4 +97,21 @@ footer a {
   text-decoration: none;
   padding: 1rem 2rem;
   border: 1px solid #07140c;
+}
+
+@media only screen and (max-width: 800px) {
+  header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
 }
